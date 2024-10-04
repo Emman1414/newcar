@@ -42,7 +42,7 @@ var serviceSlider = tns({
   container: ".services__slider",
   items: 3, // Display 3 items by default
   slideBy: "page",
-  autoplay: false,
+  autoplay: true,
   controlsContainer: "#controls",
   prevButton: ".prev",
   nextButton: ".next",
