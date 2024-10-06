@@ -1153,35 +1153,51 @@ img {
   position: relative;
 }
 .header nav {
-  padding: 1rem 0rem;
+  padding: 1rem 0;
 }
 .header__nav {
-  float: right;
-  margin-right: 16px;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .header li {
-  float: left;
   position: relative;
-  margin: 0 0 0 4px;
 }
 .header li a {
-  display: inline-block;
+  position: relative;
   padding: 10px 12px;
   color: #fff;
   font-weight: 600;
   font-size: 1.2rem;
   font-family: "Ubuntu", Arial, sans-serif;
-  background: #26252a;
-  transition: 0.3s all ease;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 .header li a:hover {
-  background: #26252a;
-  transition: 0.3s all ease;
   color: #f8565d;
 }
-.header li a:hover strong {
+.header li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -70px;
   width: 100%;
-  opacity: 1;
+  height: 10px;
+  background-color: #f8565d;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+.header li a:hover::after {
+  transform: scaleX(1);
+}
+@media (max-width: 768px) {
+  .header li a {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
 }
 
 .banner {

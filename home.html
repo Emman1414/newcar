@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <!-- HEADER -->
@@ -26,7 +27,12 @@
           </div>
 
           <nav>
-            <ul class="header__nav">
+            <ul
+              class="header__nav"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
               <li>
                 <a href="./home.html">HOME</a>
               </li>
@@ -48,6 +54,8 @@
       </div>
     </header>
 
+    <!-- HOME BANNER -->
+
     <section class="banner">
       <div class="banner__wrapper">
         <div class="banner__slider">
@@ -55,7 +63,12 @@
           <div class="banner__cars">
             <div class="banner__content">
               <img src="/IMG/slide1.jpg" alt="Car" class="banner__image" />
-              <div class="banner__caption">
+              <div
+                class="banner__caption"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
                 <h2>Complete<br />Auto Service</h2>
               </div>
             </div>
@@ -63,13 +76,23 @@
           <div class="banner__cars">
             <div class="banner__content">
               <img src="/IMG/slide2.jpg" alt="Car" class="banner__image" />
-              <div class="banner__caption">
+              <div
+                class="banner__caption"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
                 <h2>Car Quality<br />Maintenance</h2>
               </div>
             </div>
           </div>
           <div class="banner__cars">
-            <div class="banner__content">
+            <div
+              class="banner__content"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
               <img src="/IMG/slide3.jpg" alt="Car" class="banner__image" />
               <div class="banner__caption">
                 <h2>Fair Friendly<br />Service</h2>
@@ -327,10 +350,11 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script> -->
+      AOS.refresh(); // initialize AOS animations
+    </script>
     <script src="./js/slider.js"></script>
   </body>
 </html>

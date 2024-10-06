@@ -1,6 +1,59 @@
 @use "../abstract" as *;
 @use "../base/" as *;
 
+// .header {
+//   position: relative;
+//   z-index: 100;
+//   background-color: $clr--dark;
+//   padding: 0;
+
+//   &__wrapper {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     position: relative;
+//   }
+
+//   &__logo {
+//   }
+
+//   nav {
+//     padding: 1rem 0rem;
+//   }
+
+//   &__nav {
+//     float: right;
+//     margin-right: 16px;
+//   }
+
+//   li {
+//     float: left;
+//     position: relative;
+//     margin: 0 0 0 4px;
+//   }
+//   li a {
+//     display: inline-block;
+//     padding: 10px 12px;
+//     color: $clr--light;
+//     font-weight: 600;
+//     font-size: 1.2rem;
+//     font-family: $font--primary;
+//     background: #26252a;
+//     -webkit-transition: 0.3s all ease;
+//     transition: 0.3s all ease;
+//     &:hover {
+//       background: #26252a;
+//       -webkit-transition: 0.3s all ease;
+//       transition: 0.3s all ease;
+//       color: $clr--secondary;
+//     }
+//     &:hover strong {
+//       width: 100%;
+//       opacity: 1;
+//     }
+//   }
+// }
+
 .header {
   position: relative;
   z-index: 100;
@@ -15,55 +68,65 @@
   }
 
   &__logo {
-    // img {
-    // }
+    // Optional: Add logo styles here if needed
   }
 
   nav {
-    padding: 1rem 0rem;
+    padding: 1rem 0;
   }
 
   &__nav {
-    float: right;
-    margin-right: 16px;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   li {
-    float: left;
     position: relative;
-    margin: 0 0 0 4px;
   }
+
   li a {
-    display: inline-block;
+    position: relative;
     padding: 10px 12px;
     color: $clr--light;
     font-weight: 600;
     font-size: 1.2rem;
     font-family: $font--primary;
-    background: #26252a;
-    -webkit-transition: 0.3s all ease;
-    transition: 0.3s all ease;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    // Hover effect on text color
     &:hover {
-      background: #26252a;
-      -webkit-transition: 0.3s all ease;
-      transition: 0.3s all ease;
       color: $clr--secondary;
     }
-    &:hover strong {
+
+    // Create the underline effect using ::after
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -70px;
       width: 100%;
-      opacity: 1;
+      height: 10px;
+      background-color: #f8565d; // Line color
+      transform: scaleX(0); // Start with the line hidden
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    // Animation when hovering
+    &:hover::after {
+      transform: scaleX(1); // Expand the line on hover
     }
   }
-  //   .nav-with-ul:after {
-  //     content: "";
-  //     position: absolute;
-  //     width: 5px;
-  //     bottom: 10px;
-  //     left: 50%;
-  //     pointer-events: none;
-  //     z-index: 999;
-  //     width: 0;
-  //     height: 0;
 
-  //   }
+  // Adjust padding and hover effects for small screens
+  @media (max-width: 768px) {
+    li a {
+      font-size: 1rem;
+      padding: 8px 10px;
+    }
+  }
 }
