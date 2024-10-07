@@ -9,6 +9,10 @@
   &__wrapper {
     padding: 5rem 1rem;
     @include evenGrid(4, 3rem);
+    @include mediaQuery(520px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
   .title {
     padding-top: 4rem;
@@ -49,6 +53,15 @@
   font-family: $font--secondary;
   &__wrapper {
     @include evenGrid(2, 3rem);
+    @include mediaQuery(520px) {
+      padding: 5rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      grid-template-columns: 1fr;
+    }
   }
 
   .leftHistory {
@@ -138,7 +151,7 @@
   }
   .title {
     display: flex;
-  
+
     h2 {
       text-transform: uppercase;
       font-weight: 700;
@@ -153,7 +166,7 @@
   .cards {
     flex-direction: column;
     img {
-        padding-bottom: 2rem;
+      padding-bottom: 2rem;
     }
     small {
       padding: 2rem 0rem;

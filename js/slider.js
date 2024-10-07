@@ -60,3 +60,23 @@ var serviceSlider = tns({
     },
   },
 });
+
+
+var slider = tns({
+  container: ".banner__slidertxt",
+  items: 1,
+  speed: 300,
+  slideBy: "page",
+  autoplay: true,
+  nav: true, // Navigation dots enabled
+  navPosition: "bottom", // Position at the bottom
+  controls: false,
+  responsive: {
+    1250: {
+      items: 1,
+    },
+    200: {
+      items: 1,
+    },
+  },
+});

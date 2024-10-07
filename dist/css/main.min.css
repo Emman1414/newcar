@@ -1193,17 +1193,9 @@ img {
 .header li a:hover::after {
   transform: scaleX(1);
 }
-@media (max-width: 768px) {
-  .header li a {
-    font-size: 1rem;
-    padding: 8px 10px;
-  }
-}
 
 .banner {
   position: relative;
-  margin: 0 auto;
-  max-width: 95rem;
 }
 .banner__wrapper {
   position: relative;
@@ -1535,6 +1527,12 @@ img {
   grid-template-columns: repeat(4, 1fr);
   gap: 3rem;
 }
+@media screen and (max-width: 520px) {
+  .aboutFeat__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 .aboutFeat .title {
   padding-top: 4rem;
   text-transform: uppercase;
@@ -1573,6 +1571,17 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
+}
+@media screen and (max-width: 520px) {
+  .aboutHistory__wrapper {
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
 }
 .aboutHistory .leftHistory {
   display: flex;
@@ -1688,6 +1697,9 @@ img {
 .banner .tns-outer {
   overflow: hidden;
   max-width: 100rem;
+}
+.banner .tns-outer img {
+  width: 100rem;
 }
 .banner .tns-outer > button {
   display: none;

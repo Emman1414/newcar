@@ -48,6 +48,10 @@
   overflow: hidden;
   max-width: 100rem;
 
+  img {
+    width: 100rem;
+  }
+
   & > button {
     display: none;
   }

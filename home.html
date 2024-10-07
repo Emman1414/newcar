@@ -13,7 +13,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <!-- HEADER -->
@@ -28,10 +32,7 @@
 
           <nav>
             <ul
-              class="header__nav"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-              data-aos-delay="100"
+              class="header__nav animate__animated animate__fadeInDown animate__delay-1s"
             >
               <li>
                 <a href="./home.html">HOME <strong></strong></a>
@@ -57,53 +58,40 @@
     <!-- HOME BANNER -->
 
     <section class="banner">
-      <div class="banner__wrapper">
-        <div class="banner__slider">
-          <!-- Slide 1 -->
-          <div class="banner__cars">
-            <div class="banner__content">
-              <img src="/IMG/slide1.jpg" alt="Car" class="banner__image" />
-              <div
-                class="banner__caption"
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-delay="100"
-              >
-                <h2>Complete<br />Auto Service</h2>
+      <div class="container">
+        <div class="banner__wrapper">
+          <div class="banner__slider">
+            <!-- Slide 1 -->
+            <div class="banner__cars">
+              <div class="banner__content">
+                <img src="/IMG/slide2.jpg" alt="Car" class="banner__image" />
+                <div class="banner__caption">
+                  <h2>Complete<br />Auto Service</h2>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="banner__cars">
-            <div class="banner__content">
-              <img src="/IMG/slide2.jpg" alt="Car" class="banner__image" />
-              <div
-                class="banner__caption"
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-delay="100"
-              >
-                <h2>Car Quality<br />Maintenance</h2>
+            <div class="banner__cars">
+              <div class="banner__content">
+                <img src="/IMG/slide2.jpg" alt="Car" class="banner__image" />
+                <div class="banner__caption">
+                  <h2>Car Quality<br />Maintenance</h2>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="banner__cars">
-            <div
-              class="banner__content"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-              data-aos-delay="100"
-            >
-              <img src="/IMG/slide3.jpg" alt="Car" class="banner__image" />
-              <div class="banner__caption">
-                <h2>Fair Friendly<br />Service</h2>
+            <div class="banner__cars">
+              <div class="banner__content">
+                <img src="/IMG/slide3.jpg" alt="Car" class="banner__image" />
+                <div class="banner__caption">
+                  <h2>Fair Friendly<br />Service</h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="banner__nav">
+        <!-- <div class="banner__nav">
           <div class="tns-nav"></div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -112,7 +100,9 @@
     <section class="homeServices bg--primary py--5">
       <div class="container">
         <div class="homeServices__wrapper">
-          <div class="cards">
+          <div
+            class="cards animate__animated animate__fadeInLeft animate__slow-1s"
+          >
             <h2>Complete Services</h2>
             <i class="fa-solid fa-gears"></i>
             <p>
@@ -124,7 +114,9 @@
             <span class="hover__plane"></span>
           </div>
 
-          <div class="cards">
+          <div
+            class="cards animate__animated animate__fadeInLeft animate__delay-1s"
+          >
             <h2>Oil Services</h2>
             <i class="fa-solid fa-droplet"></i>
             <p>
@@ -136,7 +128,9 @@
             <span class="hover__plane"></span>
           </div>
 
-          <div class="cards">
+          <div
+            class="cards animate__animated animate__fadeInRight animate__delay-1s"
+          >
             <h2>Engine Repair</h2>
             <i class="fa-solid fa-filter"></i>
             <p>
@@ -148,7 +142,9 @@
             <span class="hover__plane"></span>
           </div>
 
-          <div class="cards">
+          <div
+            class="cards animate__animated animate__fadeInRight animate__slow-1s"
+          >
             <h2>Scheduled Maintenance</h2>
             <i class="fa-solid fa-wrench"></i>
             <p>
@@ -178,15 +174,19 @@
         <div class="homeServ__wrapper tns-outer">
           <div class="services__slider">
             <!-- First Set -->
-            <div class="homeServ__card">
-              <img src="./IMG/page1_pic1.jpg" alt="Service Image 1" />
+            <div
+              class="homeServ__card animate__animated animate__fadeInUp animate__delay-1s"
+            >
+              <img src="./IMG/page1_pic1.jpg" alt="Service Image 1 " />
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
                 reprehenderit saepe consequuntur sint doloremque velit voluptas
                 debitis quae. Ab, magnam?
               </p>
             </div>
-            <div class="homeServ__card">
+            <div
+              class="homeServ__card animate__animated animate__fadeInUp animate__delay-1s"
+            >
               <img src="./IMG/page1_pic2.jpg" alt="Service Image 2" />
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -194,7 +194,9 @@
                 debitis quae. Ab, magnam?
               </p>
             </div>
-            <div class="homeServ__card">
+            <div
+              class="homeServ__card animate__animated animate__fadeInUp animate__delay-1s"
+            >
               <img src="./IMG/page1_pic3.jpg" alt="Service Image 3" />
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -203,7 +205,9 @@
               </p>
             </div>
             <!-- Second Set -->
-            <div class="homeServ__card">
+            <div
+              class="homeServ__card animate__animated animate__fadeInUp animate__delay-1s"
+            >
               <img src="./IMG/page1_pic1.jpg" alt="Service Image 4" />
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -211,7 +215,9 @@
                 debitis quae. Ab, magnam?
               </p>
             </div>
-            <div class="homeServ__card">
+            <div
+              class="homeServ__card animate__animated animate__fadeInUp animate__delay-1s"
+            >
               <img src="./IMG/page1_pic2.jpg" alt="Service Image 5" />
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -219,7 +225,9 @@
                 debitis quae. Ab, magnam?
               </p>
             </div>
-            <div class="homeServ__card">
+            <div
+              class="homeServ__card animate__animated animate__fadeInUp animate__delay-1s"
+            >
               <img src="./IMG/page1_pic3.jpg" alt="Service Image 6" />
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -237,7 +245,9 @@
     <section class="homeAbout bg--primary py--5">
       <div class="container">
         <div class="homeAbout__wrapper">
-          <div class="leftAbout">
+          <div
+            class="leftAbout animate__animated animate__fadeInDown animate__delay-2s"
+          >
             <div class="title">
               <h2>What We Do</h2>
             </div>
@@ -257,7 +267,9 @@
             </div>
           </div>
 
-          <div class="rightAbout">
+          <div
+            class="rightAbout animate__animated animate__fadeInUp animate__delay-2s"
+          >
             <div class="title">
               <h2>Why Us?</h2>
             </div>
@@ -287,10 +299,14 @@
     <section class="homeTitle bg--primary">
       <div class="container">
         <div class="homeTitle__wrapper">
-          <div class="title">
+          <div
+            class="title animate__animated animate__fadeInUp animate__delay-2s"
+          >
             <h1>No Better Car Service Anywhere</h1>
           </div>
-          <div class="btnTitle">
+          <div
+            class="btnTitle animate__animated animate__fadeInUp animate__delay-2s"
+          >
             <li>
               <a href="#" class="btn bg--secondary">REQUEST AN APPOINTMENT</a>
             </li>
@@ -305,9 +321,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="Copyright">
+          <div
+            class="Copyright animate__animated animate__fadeInLeft animate__delay-2s"
+          >
             <p>Car service © 2024 • Privacy Policy</p>
-            <ul class="socialMedia">
+            <div
+              class="socialMedia animate__animated animate__fadeInLeft animate__delay-2s"
+            >
               <li>
                 <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
               </li>
@@ -320,9 +340,11 @@
               <li>
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
               </li>
-            </ul>
+            </div>
           </div>
-          <div class="footer__info">
+          <div
+            class="footer__info animate__animated animate__fadeInUp animate__delay-2s"
+          >
             <p>
               9863 - 9867 Mill Road, <br />
               Cambridge, MG09 99HT <br />
@@ -334,7 +356,9 @@
               Freephone: +1 800 559 6580
             </p>
           </div>
-          <div class="footer__map">
+          <div
+            class="footer__map animate__animated animate__fadeInRight animate__delay-2s"
+          >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15624.206347523446!2d-73.94442110611926!3d40.64991466421797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1723684577347!5m2!1sen!2sph"
               width="600"
@@ -350,11 +374,6 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-      AOS.refresh(); // initialize AOS animations
-    </script>
     <script src="./js/slider.js"></script>
   </body>
 </html>

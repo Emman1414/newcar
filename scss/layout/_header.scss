@@ -67,13 +67,6 @@
     position: relative;
   }
 
-<<<<<<< HEAD
-=======
-  &__logo {
-    // Optional: Add logo styles here if needed
-  }
-
->>>>>>> c9bab017dbb6e2163d39a3e3007e6856fcdcd948
   nav {
     padding: 1rem 0;
   }
@@ -124,15 +117,4 @@
       transform: scaleX(1); // Expand the line on hover
     }
   }
-<<<<<<< HEAD
-=======
-
-  // Adjust padding and hover effects for small screens
-  @media (max-width: 768px) {
-    li a {
-      font-size: 1rem;
-      padding: 8px 10px;
-    }
-  }
->>>>>>> c9bab017dbb6e2163d39a3e3007e6856fcdcd948
 }
