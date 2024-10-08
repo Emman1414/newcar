@@ -1693,13 +1693,12 @@ img {
   color: #26252a;
 }
 
-/* Tiny-Slider Styling */
 .banner .tns-outer {
   overflow: hidden;
   max-width: 100rem;
 }
 .banner .tns-outer img {
-  width: 100rem;
+  width: 100%;
 }
 .banner .tns-outer > button {
   display: none;
