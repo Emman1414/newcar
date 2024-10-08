@@ -93,6 +93,16 @@
         padding: 2rem 0rem;
       }
     }
+    @include mediaQuery (520px){
+      display: flex;
+      grid-template-columns: 1fr;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      &--details{
+        width: 20rem;
+      }
+    }
   }
   .rightHistory {
     display: flex;
@@ -148,6 +158,9 @@
     padding: 4rem 0rem;
     gap: 2rem;
     align-items: center;
+    @include mediaQuery (520px){
+      grid-template-columns: 1fr;
+    }
   }
   .title {
     display: flex;

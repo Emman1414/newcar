@@ -90,6 +90,9 @@
   margin: 0 auto;
   .homeServices__wrapper {
     @include evenGrid(4, 3rem);
+    @include mediaQuery(520px) {
+      grid-template-columns: 1fr;
+    }
   }
   .cards {
     position: relative;
@@ -145,7 +148,7 @@
     margin: -22px -10px;
     opacity: 1;
   }
-  .cards:hover i{
+  .cards:hover i {
     color: $clr--secondary;
   }
 }
@@ -181,6 +184,9 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+    @include mediaQuery(520px) {
+      grid-template-rows: 1fr;
+    }
   }
 
   .services__slider {
@@ -203,6 +209,17 @@
       p {
         font-size: 1rem;
         color: $clr--light;
+      }
+      @include mediaQuery(520px) {
+        width: 10rem;
+        img {
+          width: 10rem;
+          height: 5rem;
+        }
+        p {
+          font-size: 1rem;
+          text-align: center;
+        }
       }
     }
   }
@@ -251,6 +268,12 @@
 // HOME ABOUT US
 
 .homeAbout {
+  .container {
+    @include mediaQuery(520px) {
+      padding: 2rem 2rem;
+    }
+  }
+
   background-color: $clr--light;
   margin: 0 auto;
   max-width: 90rem;
@@ -258,6 +281,10 @@
     padding: 2rem 1rem;
     @include evenGrid(2, 2rem);
     gap: 3rem;
+    @include mediaQuery(520px) {
+      grid-template-columns: 1fr;
+      padding: 0rem 1rem;
+    }
   }
   .leftAbout {
     display: flex;
@@ -334,6 +361,13 @@
       font-size: 6rem;
       text-transform: uppercase;
       font-weight: 600;
+    }
+    @include mediaQuery(520px) {
+      h1 {
+        display: block;
+        letter-spacing: 0rem;
+        font-size: 60px;
+      }
     }
   }
   .btnTitle {
