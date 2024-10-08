@@ -1306,56 +1306,84 @@ img {
 }
 .banner__image {
   position: relative;
-  width: 95%;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 auto;
 }
 .banner__caption {
-  width: 27%;
-  background-color: #f8565d;
+  width: 90%;
   color: #fff;
-  padding: 1rem 0rem;
+  padding: 1rem 0.5rem;
   position: absolute;
-  right: 170px;
+  top: 10rem;
+  right: -20rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 2.4rem;
+  text-align: center;
 }
 .banner__caption h2 {
   font-family: "Ubuntu Condensed", Arial, sans-serif;
   font-weight: 700;
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   text-transform: uppercase;
   line-height: 1.2;
+  text-align: left;
 }
 .banner__nav {
   position: absolute;
-  top: 0;
-  right: 100px;
-  margin-top: 1rem;
+  bottom: 10px;
+  right: 10px;
 }
 .banner__nav .tns-nav {
   display: inline-block;
-  position: absolute;
 }
 .banner__nav .tns-nav button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #fff;
-  border: none;
-  margin: 0 0.5rem;
+  width: 8px;
+  height: 8px;
+  margin: 0 0.2rem;
 }
-.banner__nav .tns-nav .tns-nav-active {
-  background-color: #f8565d;
-  position: absolute;
+@media (max-width: 520px) {
+  .banner .container {
+    padding: 0rem 1rem;
+  }
+  .banner__wrapper {
+    overflow: visible;
+    height: 200px;
+    padding: 0rem 1rem;
+  }
+  .banner__caption {
+    position: absolute;
+    width: 90%;
+    font-size: 1.8rem;
+    right: -90px;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 1rem;
+    text-align: center;
+  }
+  .banner h2 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .banner__image {
+    width: 100%;
+    height: auto;
+  }
+  .banner__nav {
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 
 .homeServices {
   max-width: 90rem;
   margin: 0 auto;
+  padding: 2rem 1rem;
 }
 .homeServices .homeServices__wrapper {
   display: grid;
@@ -1365,6 +1393,7 @@ img {
 @media screen and (max-width: 520px) {
   .homeServices .homeServices__wrapper {
     grid-template-columns: 1fr;
+    padding: 2rem 1rem;
   }
 }
 .homeServices .cards {
@@ -1446,7 +1475,7 @@ img {
   text-transform: uppercase;
 }
 .homeServ__wrapper {
-  position: relative; /* Added to position the chevrons */
+  position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1462,7 +1491,7 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 .homeServ .services__slider .homeServ__card {
-  width: 33%; /* Ensure 3 items are shown */
+  width: 33%;
   text-align: center;
   position: relative;
 }
@@ -1495,7 +1524,7 @@ img {
   right: 0;
   display: flex;
   justify-content: space-between;
-  width: 5rem; /* Adjust based on space needed */
+  width: 5rem;
   pointer-events: none; /* To allow easy clicking on slider */
   transform: translateY(-50%);
 }
@@ -1849,7 +1878,7 @@ img {
 .banner .tns-nav {
   text-align: center;
   position: absolute;
-  z-index: 999;
+  z-index: 0;
   right: 400px;
   bottom: 80px;
 }
@@ -1865,42 +1894,22 @@ img {
   background-color: #26252a;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for the slider */
 @media (max-width: 520px) {
-  .homeServ__card {
-    width: 100%; /* Make cards full width on smaller screens */
+  .banner .tns-outer {
+    max-width: 100%;
   }
-  img {
-    width: 100%;
-    height: auto;
+  .banner .tns-nav {
+    bottom: 70px;
+    right: 30%;
+    transform: translateX(50%);
   }
-  .homeServ__controls {
-    top: 40%; /* Adjust chevron positions for smaller screens */
+  .banner .tns-nav button {
+    margin: 0 0.2rem;
+    width: 0.4rem;
+    height: 0.4rem;
   }
-}
-.tns-outer {
-  overflow: hidden;
-  max-width: 100rem;
-}
-.tns-outer > button {
-  display: none;
-}
-
-.tns-nav {
-  text-align: center;
-  position: absolute;
-  z-index: 999;
-  right: 400px;
-  bottom: 80px;
-}
-.tns-nav button {
-  margin: 2rem 0.5rem;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  border: none;
-  background-color: #fff;
-}
-.tns-nav button.tns-nav-active {
-  background-color: #26252a;
+  .banner .tns-nav button.tns-nav-active {
+    background-color: #3e3e43;
+  }
 }/*# sourceMappingURL=main.min.css.map */

@@ -1,10 +1,6 @@
 @use "../abstract" as *;
 @use "../base/" as *;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 94746928c243ccf95ee2893634c11508d14dc80a
 .header {
   position: relative;
   z-index: 100;
@@ -61,7 +57,7 @@
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 
-    // Hover effect on text color
+   
     &:hover {
       color: $clr--secondary;
     }
@@ -74,15 +70,15 @@
       bottom: -70px;
       width: 100%;
       height: 10px;
-      background-color: #f8565d; // Line color
-      transform: scaleX(0); // Start with the line hidden
+      background-color: #f8565d; 
+      transform: scaleX(0); 
       transform-origin: left;
       transition: transform 0.3s ease-in-out;
     }
 
     // Animation when hovering
     &:hover::after {
-      transform: scaleX(1); // Expand the line on hover
+      transform: scaleX(1); 
     }
   }
 
