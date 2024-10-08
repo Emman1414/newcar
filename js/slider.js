@@ -52,7 +52,7 @@ var serviceSlider = tns({
     1024: {
       items: 3, // Show 3 items on screens wider than 1024px
     },
-    768: {
+    520: {
       items: 2, // Show 2 items on tablet-sized screens
     },
     480: {
